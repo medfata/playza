@@ -61,7 +61,7 @@ export default function Home() {
   const [copySuccess, setCopySuccess] = useState(false);
   const [roses, setRoses] = useState<Array<{ id: number; delay: number; duration: number; left: string }>>([]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const contractAddress = "0x1079D98078739032e47Efd0B7888068f43497BCa";
+  const contractAddress = "";
 
   const copyToClipboard = async () => {
     try {
@@ -143,6 +143,38 @@ export default function Home() {
               >
                 Links
               </button>
+
+              {/* Social Icons */}
+              <div className="flex items-center gap-4 ml-4 pl-4 border-l border-white/20">
+                <a
+                  href="https://x.com/PLAYZZZZZA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                >
+                  <Image
+                    src="/social/X_icon.svg"
+                    alt="X"
+                    width={18}
+                    height={18}
+                    className=""
+                  />
+                </a>
+                <a
+                  href="https://t.me/playzzzza"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                >
+                  <Image
+                    src="/social/telegram-svgrepo-com.svg"
+                    alt="Telegram"
+                    width={18}
+                    height={18}
+                    className="filter brightness-0 invert"
+                  />
+                </a>
+              </div>
             </div>
 
             {/* Mobile Menu Button */}
@@ -180,6 +212,38 @@ export default function Home() {
                 >
                   Links
                 </button>
+
+                {/* Mobile Social Icons */}
+                <div className="flex items-center gap-4 pt-4 mt-4 border-t border-white/10">
+                  <a
+                    href="https://x.com/PLAYZZZZZA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all duration-300"
+                  >
+                    <Image
+                      src="/social/X_icon.svg"
+                      alt="X"
+                      width={20}
+                      height={20}
+                      className=""
+                    />
+                  </a>
+                  <a
+                    href="https://t.me/playzzzza"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all duration-300"
+                  >
+                    <Image
+                      src="/social/telegram-svgrepo-com.svg"
+                      alt="Telegram"
+                      width={20}
+                      height={20}
+                      className="filter brightness-0 invert"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           )}
@@ -298,7 +362,7 @@ export default function Home() {
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
             <p className="text-white text-sm mb-3 opacity-80 font-inter">Contract Address:</p>
             <div className="flex items-center gap-3 flex-wrap justify-center">
-              <code className="text-white font-mono text-sm md:text-base bg-black/30 px-4 py-2 rounded-lg">
+              <code className="text-white font-mono text-sm md:text-base bg-black/30 px-4 py-2 rounded-lg min-w-[435px] min-h-[40px] flex items-center">
                 {contractAddress}
               </code>
               <button
