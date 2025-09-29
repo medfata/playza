@@ -61,7 +61,7 @@ export default function Home() {
   const [copySuccess, setCopySuccess] = useState(false);
   const [roses, setRoses] = useState<Array<{ id: number; delay: number; duration: number; left: string }>>([]);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const contractAddress = "";
+  const [contractAddress, setContractAddress] = useState("");
 
   const copyToClipboard = async () => {
     try {
@@ -100,6 +100,23 @@ export default function Home() {
     };
 
     generateRoses();
+  }, []);
+
+  // Fetch contract address on component mount
+  useEffect(() => {
+    const fetchContractAddress = async () => {
+      try {
+        const response = await fetch('/api/contract');
+        if (response.ok) {
+          const data = await response.json();
+          setContractAddress(data.contractAddress || '');
+        }
+      } catch (error) {
+        console.error('Failed to fetch contract address:', error);
+      }
+    };
+
+    fetchContractAddress();
   }, []);
 
   return (
