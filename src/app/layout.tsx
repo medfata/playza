@@ -19,8 +19,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "PLAYZA - PlasmaJak on Plasma",
-  description: "A new start with the legendary Wojak on Plasma called PlasmaJak!",
+  title: "PLAYZA",
+  description: "!",
 };
 
 export default function RootLayout({

@@ -32,4 +32,4 @@ async function updateAddress(contractAddress) {
 }
 
 // call the function
-updateAddress("");
+updateAddress("test");
