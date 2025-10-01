@@ -129,13 +129,21 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <div className="relative w-10 h-10">
                 <Image
-                  src="/images/5965021228781652892.jpg"
+                  src="/images/5974076634749323924.jpg"
                   alt="PLAYZA Logo"
                   fill
                   className="object-cover rounded-full border-2 border-[#f5bf02]"
                 />
               </div>
-              <div className="text-2xl font-black text-black font-inter tracking-wider">
+              <div
+                className="text-2xl font-black font-inter tracking-wider"
+                style={{
+                  color: '#f5bf02',
+                  textShadow: '2px 2px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000',
+                  WebkitTextStroke: '1.5px #000',
+                  letterSpacing: '0.02em'
+                }}
+              >
                 PLAYZA
               </div>
             </div>
@@ -296,7 +304,7 @@ export default function Home() {
         <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto px-4">
           {/* Large Heading */}
           <h1
-            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-6 sm:mb-8 tracking-tight font-inter"
+            className="text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] font-black mb-6 sm:mb-8 tracking-tight font-inter"
             style={{
               color: '#f5bf02',
               textShadow: '4px 4px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000',
