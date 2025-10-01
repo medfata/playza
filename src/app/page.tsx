@@ -295,45 +295,122 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto px-4">
           {/* Large Heading */}
-          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-black mb-6 sm:mb-8 tracking-tight font-inter">
+          <h1
+            className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-6 sm:mb-8 tracking-tight font-inter"
+            style={{
+              color: '#f5bf02',
+              textShadow: '4px 4px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000',
+              WebkitTextStroke: '3px #000',
+              letterSpacing: '0.02em'
+            }}
+          >
             PLAYZA
           </h1>
 
           {/* Welcome Text */}
-          <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 mb-6 sm:mb-8 max-w-3xl leading-relaxed font-inter font-bold px-2 text-center">
-            The Meme Revolution on BNB
+          <p
+            className="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 max-w-3xl leading-relaxed font-inter font-black px-2 text-center"
+            style={{
+              color: '#000',
+              textShadow: '2px 2px 0px rgba(245, 191, 2, 0.3)',
+              letterSpacing: '0.03em'
+            }}
+          >
+            The Meme Revolution on <span
+              className="inline-block px-4 py-1 rounded-lg font-black"
+              style={{
+                background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                color: '#000',
+                border: '3px solid #000',
+                boxShadow: '4px 4px 0px #000',
+                textShadow: 'none',
+                letterSpacing: '0.05em'
+              }}
+            >BNB</span>
           </p>
 
           {/* Description */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 max-w-2xl leading-relaxed font-inter px-2 text-center">
-            PLAYZA isn't just another token — it's the meme-powered fuel for the next wave of fun and community vibes on the BNB blockchain.
+          <p
+            className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 max-w-2xl leading-relaxed font-inter px-2 text-center font-semibold"
+            style={{
+              color: '#1a1a1a',
+              letterSpacing: '0.02em'
+            }}
+          >
+            PLAYZA isn't just another token — it's the <span style={{ color: '#f5bf02', fontWeight: 900 }}>meme-powered fuel</span> for the next wave of fun and community vibes on the <span style={{ color: '#f5bf02', fontWeight: 900 }}>BNB</span> blockchain.
           </p>
 
           {/* Get Started Button */}
           <button
-            className="text-lg sm:text-xl font-bold px-10 sm:px-14 md:px-16 py-4 sm:py-5 rounded-2xl transition-all duration-300 transform hover:scale-105 mb-8 sm:mb-10 font-inter shadow-lg hover:shadow-xl"
+            className="text-lg sm:text-xl font-black px-10 sm:px-14 md:px-16 py-4 sm:py-5 rounded-xl transition-all duration-300 transform hover:scale-105 mb-8 sm:mb-10 font-inter relative overflow-hidden group"
             style={{
-              backgroundColor: '#f5bf02',
-              color: '#000000'
+              background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+              color: '#000000',
+              border: '4px solid #000',
+              boxShadow: '6px 6px 0px #000',
+              letterSpacing: '0.1em',
+              textShadow: '1px 1px 0px rgba(0,0,0,0.2)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = '8px 8px 0px #000';
+              e.currentTarget.style.transform = 'translate(-2px, -2px) scale(1.05)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = '6px 6px 0px #000';
+              e.currentTarget.style.transform = 'scale(1)';
             }}
           >
             GET STARTED
           </button>
 
           {/* Contract Address Copy Section */}
-          <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 border-2 border-gray-200 w-full max-w-2xl shadow-sm">
-            <p className="text-gray-700 text-sm font-semibold mb-4 font-inter text-center">Contract Address</p>
+          <div
+            className="rounded-2xl p-6 sm:p-8 w-full max-w-2xl relative"
+            style={{
+              background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%)',
+              border: '3px solid #000',
+              boxShadow: '8px 8px 0px #000'
+            }}
+          >
+            <p
+              className="text-sm font-black mb-4 font-inter text-center uppercase tracking-wider"
+              style={{
+                color: '#000',
+                letterSpacing: '0.15em'
+              }}
+            >
+              Contract Address
+            </p>
             <div className="flex flex-col sm:flex-row items-center gap-3 justify-center">
-              <code className="text-gray-800 font-mono text-xs sm:text-sm md:text-base bg-white px-4 py-3 rounded-xl border border-gray-300 min-h-[48px] flex items-center w-full sm:min-w-[280px] md:min-w-[435px] break-all text-center font-medium">
+              <code
+                className="font-mono text-xs sm:text-sm md:text-base px-4 py-3 rounded-lg min-h-[48px] flex items-center w-full sm:min-w-[280px] md:min-w-[435px] break-all text-center font-bold"
+                style={{
+                  background: '#fff',
+                  color: '#000',
+                  border: '3px solid #000',
+                  boxShadow: '4px 4px 0px #000',
+                  letterSpacing: '0.05em'
+                }}
+              >
                 {contractAddress || 'No address set'}
               </code>
               <button
                 onClick={copyToClipboard}
-                className="px-6 py-3 rounded-xl font-bold transition-all duration-200 hover:scale-105 font-inter w-full sm:w-auto shadow-sm border-2"
+                className="px-6 py-3 rounded-lg font-black transition-all duration-200 font-inter w-full sm:w-auto uppercase tracking-wider"
                 style={{
-                  backgroundColor: copySuccess ? '#10B981' : '#f5bf02',
+                  background: copySuccess ? 'linear-gradient(135deg, #10B981 0%, #059669 100%)' : 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
                   color: '#000000',
-                  borderColor: copySuccess ? '#10B981' : '#000000'
+                  border: '3px solid #000',
+                  boxShadow: '4px 4px 0px #000',
+                  letterSpacing: '0.1em'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translate(-2px, -2px)';
+                  e.currentTarget.style.boxShadow = '6px 6px 0px #000';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translate(0, 0)';
+                  e.currentTarget.style.boxShadow = '4px 4px 0px #000';
                 }}
               >
                 {copySuccess ? '✓ Copied!' : 'Copy'}
@@ -360,29 +437,95 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border-2 border-gray-200 hover:border-[#f5bf02] transition-all duration-300">
-                    <div className="w-3 h-3 rounded-full bg-[#f5bf02] mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-800 font-inter text-lg leading-relaxed font-medium">
-                      Built on BNB, the fastest-growing chain for meme culture
+                  <div
+                    className="flex items-start gap-4 p-6 rounded-xl transition-all duration-300"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%)',
+                      border: '3px solid #000',
+                      boxShadow: '4px 4px 0px #000'
+                    }}
+                  >
+                    <div
+                      className="w-4 h-4 rounded-sm mt-1 flex-shrink-0"
+                      style={{
+                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                        border: '2px solid #000',
+                        boxShadow: '2px 2px 0px #000'
+                      }}
+                    ></div>
+                    <p className="font-inter text-lg leading-relaxed font-bold" style={{ color: '#000', letterSpacing: '0.02em' }}>
+                      Built on <span
+                        className="inline-block px-2 py-0.5 rounded font-black"
+                        style={{
+                          background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                          color: '#000',
+                          border: '2px solid #000',
+                          boxShadow: '2px 2px 0px #000',
+                          letterSpacing: '0.05em',
+                          fontSize: '0.95em'
+                        }}
+                      >BNB</span>, the fastest-growing chain for meme culture
                     </p>
                   </div>
-                  <div className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border-2 border-gray-200 hover:border-[#f5bf02] transition-all duration-300">
-                    <div className="w-3 h-3 rounded-full bg-[#f5bf02] mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-800 font-inter text-lg leading-relaxed font-medium">
+                  <div
+                    className="flex items-start gap-4 p-6 rounded-xl transition-all duration-300"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%)',
+                      border: '3px solid #000',
+                      boxShadow: '4px 4px 0px #000'
+                    }}
+                  >
+                    <div
+                      className="w-4 h-4 rounded-sm mt-1 flex-shrink-0"
+                      style={{
+                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                        border: '2px solid #000',
+                        boxShadow: '2px 2px 0px #000'
+                      }}
+                    ></div>
+                    <p className="font-inter text-lg leading-relaxed font-bold" style={{ color: '#000', letterSpacing: '0.02em' }}>
                       100% community-driven — no boring suits, just pure memes
                     </p>
                   </div>
                 </div>
                 <div className="space-y-6">
-                  <div className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border-2 border-gray-200 hover:border-[#f5bf02] transition-all duration-300">
-                    <div className="w-3 h-3 rounded-full bg-[#f5bf02] mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-800 font-inter text-lg leading-relaxed font-medium">
+                  <div
+                    className="flex items-start gap-4 p-6 rounded-xl transition-all duration-300"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%)',
+                      border: '3px solid #000',
+                      boxShadow: '4px 4px 0px #000'
+                    }}
+                  >
+                    <div
+                      className="w-4 h-4 rounded-sm mt-1 flex-shrink-0"
+                      style={{
+                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                        border: '2px solid #000',
+                        boxShadow: '2px 2px 0px #000'
+                      }}
+                    ></div>
+                    <p className="font-inter text-lg leading-relaxed font-bold" style={{ color: '#000', letterSpacing: '0.02em' }}>
                       A token where fun meets utility — memes, games, raffles, and more
                     </p>
                   </div>
-                  <div className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border-2 border-gray-200 hover:border-[#f5bf02] transition-all duration-300">
-                    <div className="w-3 h-3 rounded-full bg-[#f5bf02] mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-800 font-inter text-lg leading-relaxed font-medium">
+                  <div
+                    className="flex items-start gap-4 p-6 rounded-xl transition-all duration-300"
+                    style={{
+                      background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%)',
+                      border: '3px solid #000',
+                      boxShadow: '4px 4px 0px #000'
+                    }}
+                  >
+                    <div
+                      className="w-4 h-4 rounded-sm mt-1 flex-shrink-0"
+                      style={{
+                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                        border: '2px solid #000',
+                        boxShadow: '2px 2px 0px #000'
+                      }}
+                    ></div>
+                    <p className="font-inter text-lg leading-relaxed font-bold" style={{ color: '#000', letterSpacing: '0.02em' }}>
                       Strong, united, and playful community we call the PLAYZERS
                     </p>
                   </div>
@@ -420,11 +563,21 @@ export default function Home() {
                   </h2>
                 </div>
                 <div className="text-center space-y-4">
-                  <p className="text-gray-700 font-inter text-lg md:text-xl leading-relaxed">
-                    Buy, trade, meme, and play with PLAYZA. Together we'll take BNB meme culture to the moon.
+                  <p className="font-inter text-lg md:text-xl leading-relaxed font-bold" style={{ color: '#000', letterSpacing: '0.02em' }}>
+                    Buy, trade, meme, and play with <span style={{ color: '#f5bf02', fontWeight: 900 }}>PLAYZA</span>. Together we'll take <span
+                      className="inline-block px-2 py-0.5 rounded font-black"
+                      style={{
+                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                        color: '#000',
+                        border: '2px solid #000',
+                        boxShadow: '2px 2px 0px #000',
+                        letterSpacing: '0.05em',
+                        fontSize: '0.95em'
+                      }}
+                    >BNB</span> meme culture to the moon.
                   </p>
-                  <p className="text-gray-700 font-inter text-lg md:text-xl leading-relaxed">
-                    Follow us, join our Telegram, and become a true PLAYZER today!
+                  <p className="font-inter text-lg md:text-xl leading-relaxed font-bold" style={{ color: '#000', letterSpacing: '0.02em' }}>
+                    Follow us, join our Telegram, and become a true <span style={{ color: '#f5bf02', fontWeight: 900 }}>PLAYZER</span> today!
                   </p>
                 </div>
               </div>
