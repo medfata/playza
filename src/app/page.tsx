@@ -301,12 +301,12 @@ export default function Home() {
 
           {/* Welcome Text */}
           <p className="text-xl sm:text-2xl md:text-3xl text-gray-800 mb-6 sm:mb-8 max-w-3xl leading-relaxed font-inter font-bold px-2 text-center">
-            The Meme Revolution on Plasma
+            The Meme Revolution on BNB
           </p>
 
           {/* Description */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 max-w-2xl leading-relaxed font-inter px-2 text-center">
-            PLAYZA isn't just another token — it's the meme-powered fuel for the next wave of fun and community vibes on the Plasma blockchain.
+            PLAYZA isn't just another token — it's the meme-powered fuel for the next wave of fun and community vibes on the BNB blockchain.
           </p>
 
           {/* Get Started Button */}
@@ -363,7 +363,7 @@ export default function Home() {
                   <div className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border-2 border-gray-200 hover:border-[#f5bf02] transition-all duration-300">
                     <div className="w-3 h-3 rounded-full bg-[#f5bf02] mt-2 flex-shrink-0"></div>
                     <p className="text-gray-800 font-inter text-lg leading-relaxed font-medium">
-                      Built on Plasma, the fastest-growing chain for meme culture
+                      Built on BNB, the fastest-growing chain for meme culture
                     </p>
                   </div>
                   <div className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border-2 border-gray-200 hover:border-[#f5bf02] transition-all duration-300">
@@ -421,7 +421,7 @@ export default function Home() {
                 </div>
                 <div className="text-center space-y-4">
                   <p className="text-gray-700 font-inter text-lg md:text-xl leading-relaxed">
-                    Buy, trade, meme, and play with PLAYZA. Together we'll take Plasma meme culture to the moon.
+                    Buy, trade, meme, and play with PLAYZA. Together we'll take BNB meme culture to the moon.
                   </p>
                   <p className="text-gray-700 font-inter text-lg md:text-xl leading-relaxed">
                     Follow us, join our Telegram, and become a true PLAYZER today!
