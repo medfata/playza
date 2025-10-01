@@ -18,7 +18,7 @@ const Rose = ({ delay, duration, left }: { delay: number; duration: number; left
       style={{
         width: '32px',
         height: '32px',
-        background: 'linear-gradient(45deg, #f5bf02, #ffd700)',
+        background: 'linear-gradient(45deg, #8c45d3, #30e1ad)',
         borderRadius: '50% 0 50% 50%',
         border: '3px solid #000',
         transform: 'rotate(-45deg)',
@@ -34,7 +34,7 @@ const Rose = ({ delay, duration, left }: { delay: number; duration: number; left
           left: '-6px',
           width: '20px',
           height: '20px',
-          background: 'linear-gradient(45deg, #f5bf02, #ffd700)',
+          background: 'linear-gradient(45deg, #8c45d3, #30e1ad)',
           borderRadius: '50% 0 50% 50%',
           border: '2px solid #000',
           transform: 'rotate(90deg)',
@@ -47,7 +47,7 @@ const Rose = ({ delay, duration, left }: { delay: number; duration: number; left
           left: '6px',
           width: '16px',
           height: '16px',
-          background: 'linear-gradient(45deg, #d4a82f, #f5bf02)',
+          background: 'linear-gradient(45deg, #6f32b0, #8c45d3)',
           borderRadius: '50% 0 50% 50%',
           border: '2px solid #000',
           transform: 'rotate(180deg)',
@@ -122,7 +122,7 @@ export default function Home() {
   return (
     <>
       {/* Navigation Header */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gray-200 shadow-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gray-300 shadow-lg">
         <div className="max-w-7xl mx-auto px-8 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -132,13 +132,13 @@ export default function Home() {
                   src="/images/5974076634749323924.jpg"
                   alt="PLAYZA Logo"
                   fill
-                  className="object-cover rounded-full border-2 border-[#f5bf02]"
+                  className="object-cover rounded-full border-2 border-[#8c45d3]"
                 />
               </div>
               <div
                 className="text-2xl font-black font-inter tracking-wider"
                 style={{
-                  color: '#f5bf02',
+                  color: '#8c45d3',
                   textShadow: '2px 2px 0px #000, -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000',
                   WebkitTextStroke: '1.5px #000',
                   letterSpacing: '0.02em'
@@ -175,7 +175,7 @@ export default function Home() {
                   href="https://x.com/PLAYZZZZZA"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-[#f5bf02] flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-[#8c45d3] flex items-center justify-center transition-all duration-300 hover:scale-110"
                 >
                   <Image
                     src="/social/X_icon.svg"
@@ -189,7 +189,7 @@ export default function Home() {
                   href="https://t.me/playzzzza"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-[#f5bf02] flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-8 h-8 rounded-lg bg-gray-100 hover:bg-[#30e1ad] flex items-center justify-center transition-all duration-300 hover:scale-110"
                 >
                   <Image
                     src="/social/telegram-svgrepo-com.svg"
@@ -244,7 +244,7 @@ export default function Home() {
                     href="https://x.com/PLAYZZZZZA"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-gray-100 hover:bg-[#f5bf02] flex items-center justify-center transition-all duration-300"
+                    className="w-10 h-10 rounded-lg bg-gray-100 hover:bg-[#8c45d3] flex items-center justify-center transition-all duration-300"
                   >
                     <Image
                       src="/social/X_icon.svg"
@@ -258,7 +258,7 @@ export default function Home() {
                     href="https://t.me/playzzzza"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-gray-100 hover:bg-[#f5bf02] flex items-center justify-center transition-all duration-300"
+                    className="w-10 h-10 rounded-lg bg-gray-100 hover:bg-[#30e1ad] flex items-center justify-center transition-all duration-300"
                   >
                     <Image
                       src="/social/telegram-svgrepo-com.svg"
@@ -277,7 +277,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section
-        className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 pt-20 sm:pt-24 bg-white"
+        className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 pt-20 sm:pt-24"
+        style={{ background: 'linear-gradient(135deg, #f4f4f4 0%, #ffffff 100%)' }}
       >
         {/* Background Images */}
         <div className="absolute inset-0 z-0">
@@ -306,7 +307,7 @@ export default function Home() {
           <h1
             className="text-6xl sm:text-8xl md:text-9xl lg:text-[12rem] font-black mb-6 sm:mb-8 tracking-tight font-inter"
             style={{
-              color: '#f5bf02',
+              color: '#8c45d3',
               textShadow: '4px 4px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000',
               WebkitTextStroke: '3px #000',
               letterSpacing: '0.02em'
@@ -320,21 +321,21 @@ export default function Home() {
             className="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 max-w-3xl leading-relaxed font-inter font-black px-2 text-center"
             style={{
               color: '#000',
-              textShadow: '2px 2px 0px rgba(245, 191, 2, 0.3)',
+              textShadow: '2px 2px 0px rgba(140, 69, 211, 0.3)',
               letterSpacing: '0.03em'
             }}
           >
             The Meme Revolution on <span
               className="inline-block px-4 py-1 rounded-lg font-black"
               style={{
-                background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
-                color: '#000',
+                background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)',
+                color: '#fff',
                 border: '3px solid #000',
                 boxShadow: '4px 4px 0px #000',
                 textShadow: 'none',
                 letterSpacing: '0.05em'
               }}
-            >BNB</span>
+            >SOLANA</span>
           </p>
 
           {/* Description */}
@@ -345,19 +346,19 @@ export default function Home() {
               letterSpacing: '0.02em'
             }}
           >
-            PLAYZA isn't just another token — it's the <span style={{ color: '#f5bf02', fontWeight: 900 }}>meme-powered fuel</span> for the next wave of fun and community vibes on the <span style={{ color: '#f5bf02', fontWeight: 900 }}>BNB</span> blockchain.
+            PLAYZA isn't just another token — it's the <span style={{ color: '#8c45d3', fontWeight: 900 }}>meme-powered fuel</span> for the next wave of fun and community vibes on the <span style={{ color: '#8c45d3', fontWeight: 900 }}>SOLANA</span> blockchain.
           </p>
 
           {/* Get Started Button */}
           <button
             className="text-lg sm:text-xl font-black px-10 sm:px-14 md:px-16 py-4 sm:py-5 rounded-xl transition-all duration-300 transform hover:scale-105 mb-8 sm:mb-10 font-inter relative overflow-hidden group"
             style={{
-              background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
-              color: '#000000',
+              background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)',
+              color: '#ffffff',
               border: '4px solid #000',
               boxShadow: '6px 6px 0px #000',
               letterSpacing: '0.1em',
-              textShadow: '1px 1px 0px rgba(0,0,0,0.2)'
+              textShadow: '1px 1px 0px rgba(0,0,0,0.3)'
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow = '8px 8px 0px #000';
@@ -375,7 +376,7 @@ export default function Home() {
           <div
             className="rounded-2xl p-6 sm:p-8 w-full max-w-2xl relative"
             style={{
-              background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.1) 0%, rgba(255, 215, 0, 0.1) 100%)',
+              background: 'linear-gradient(135deg, rgba(140, 69, 211, 0.15) 0%, rgba(48, 225, 173, 0.15) 100%)',
               border: '3px solid #000',
               boxShadow: '8px 8px 0px #000'
             }}
@@ -406,8 +407,8 @@ export default function Home() {
                 onClick={copyToClipboard}
                 className="px-6 py-3 rounded-lg font-black transition-all duration-200 font-inter w-full sm:w-auto uppercase tracking-wider"
                 style={{
-                  background: copySuccess ? 'linear-gradient(135deg, #10B981 0%, #059669 100%)' : 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
-                  color: '#000000',
+                  background: copySuccess ? 'linear-gradient(135deg, #30e1ad 0%, #10B981 100%)' : 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)',
+                  color: '#ffffff',
                   border: '3px solid #000',
                   boxShadow: '4px 4px 0px #000',
                   letterSpacing: '0.1em'
@@ -429,14 +430,14 @@ export default function Home() {
       </section>
 
       {/* Content Sections */}
-      <section className="relative py-16 sm:py-24 md:py-32 overflow-hidden bg-gray-50">
+      <section className="relative py-16 sm:py-24 md:py-32 overflow-hidden" style={{ background: '#f4f4f4' }}>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           {/* Why PLAYZA Section */}
           <div id="features" className="mb-16 sm:mb-24 md:mb-32">
             <div className="bg-white rounded-3xl p-8 sm:p-12 md:p-16 shadow-xl border-2 border-gray-200">
               <div className="text-center mb-8 sm:mb-12">
-                <div className="inline-block px-6 py-2 bg-[#f5bf02] rounded-full mb-6">
-                  <span className="text-black font-bold text-sm tracking-wider uppercase">Features</span>
+                <div className="inline-block px-6 py-2 rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)' }}>
+                  <span className="text-white font-bold text-sm tracking-wider uppercase">Features</span>
                 </div>
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-black mb-4 font-inter">
                   Why PLAYZA?
@@ -448,7 +449,7 @@ export default function Home() {
                   <div
                     className="flex items-start gap-4 p-6 rounded-xl transition-all duration-300"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%)',
+                      background: 'linear-gradient(135deg, rgba(140, 69, 211, 0.08) 0%, rgba(48, 225, 173, 0.08) 100%)',
                       border: '3px solid #000',
                       boxShadow: '4px 4px 0px #000'
                     }}
@@ -456,7 +457,7 @@ export default function Home() {
                     <div
                       className="w-4 h-4 rounded-sm mt-1 flex-shrink-0"
                       style={{
-                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                        background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)',
                         border: '2px solid #000',
                         boxShadow: '2px 2px 0px #000'
                       }}
@@ -465,20 +466,20 @@ export default function Home() {
                       Built on <span
                         className="inline-block px-2 py-0.5 rounded font-black"
                         style={{
-                          background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
-                          color: '#000',
+                          background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)',
+                          color: '#fff',
                           border: '2px solid #000',
                           boxShadow: '2px 2px 0px #000',
                           letterSpacing: '0.05em',
                           fontSize: '0.95em'
                         }}
-                      >BNB</span>, the fastest-growing chain for meme culture
+                      >SOLANA</span>, the fastest-growing chain for meme culture
                     </p>
                   </div>
                   <div
                     className="flex items-start gap-4 p-6 rounded-xl transition-all duration-300"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%)',
+                      background: 'linear-gradient(135deg, rgba(140, 69, 211, 0.08) 0%, rgba(48, 225, 173, 0.08) 100%)',
                       border: '3px solid #000',
                       boxShadow: '4px 4px 0px #000'
                     }}
@@ -486,7 +487,7 @@ export default function Home() {
                     <div
                       className="w-4 h-4 rounded-sm mt-1 flex-shrink-0"
                       style={{
-                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                        background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)',
                         border: '2px solid #000',
                         boxShadow: '2px 2px 0px #000'
                       }}
@@ -500,7 +501,7 @@ export default function Home() {
                   <div
                     className="flex items-start gap-4 p-6 rounded-xl transition-all duration-300"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%)',
+                      background: 'linear-gradient(135deg, rgba(140, 69, 211, 0.08) 0%, rgba(48, 225, 173, 0.08) 100%)',
                       border: '3px solid #000',
                       boxShadow: '4px 4px 0px #000'
                     }}
@@ -508,7 +509,7 @@ export default function Home() {
                     <div
                       className="w-4 h-4 rounded-sm mt-1 flex-shrink-0"
                       style={{
-                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                        background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)',
                         border: '2px solid #000',
                         boxShadow: '2px 2px 0px #000'
                       }}
@@ -520,7 +521,7 @@ export default function Home() {
                   <div
                     className="flex items-start gap-4 p-6 rounded-xl transition-all duration-300"
                     style={{
-                      background: 'linear-gradient(135deg, rgba(245, 191, 2, 0.05) 0%, rgba(255, 215, 0, 0.05) 100%)',
+                      background: 'linear-gradient(135deg, rgba(140, 69, 211, 0.08) 0%, rgba(48, 225, 173, 0.08) 100%)',
                       border: '3px solid #000',
                       boxShadow: '4px 4px 0px #000'
                     }}
@@ -528,7 +529,7 @@ export default function Home() {
                     <div
                       className="w-4 h-4 rounded-sm mt-1 flex-shrink-0"
                       style={{
-                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
+                        background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)',
                         border: '2px solid #000',
                         boxShadow: '2px 2px 0px #000'
                       }}
@@ -548,8 +549,8 @@ export default function Home() {
               {/* Vision */}
               <div className="bg-white rounded-3xl p-8 sm:p-10 md:p-12 shadow-xl border-2 border-gray-200">
                 <div className="text-center mb-8">
-                  <div className="inline-block px-6 py-2 bg-[#f5bf02] rounded-full mb-6">
-                    <span className="text-black font-bold text-sm tracking-wider uppercase">Vision</span>
+                  <div className="inline-block px-6 py-2 rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)' }}>
+                    <span className="text-white font-bold text-sm tracking-wider uppercase">Vision</span>
                   </div>
                   <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-inter">
                     Our Vision
@@ -563,8 +564,8 @@ export default function Home() {
               {/* Mission */}
               <div className="bg-white rounded-3xl p-8 sm:p-10 md:p-12 shadow-xl border-2 border-gray-200">
                 <div className="text-center mb-8">
-                  <div className="inline-block px-6 py-2 bg-[#f5bf02] rounded-full mb-6">
-                    <span className="text-black font-bold text-sm tracking-wider uppercase">Mission</span>
+                  <div className="inline-block px-6 py-2 rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)' }}>
+                    <span className="text-white font-bold text-sm tracking-wider uppercase">Mission</span>
                   </div>
                   <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 font-inter">
                     Join the Movement
@@ -572,20 +573,20 @@ export default function Home() {
                 </div>
                 <div className="text-center space-y-4">
                   <p className="font-inter text-lg md:text-xl leading-relaxed font-bold" style={{ color: '#000', letterSpacing: '0.02em' }}>
-                    Buy, trade, meme, and play with <span style={{ color: '#f5bf02', fontWeight: 900 }}>PLAYZA</span>. Together we'll take <span
+                    Buy, trade, meme, and play with <span style={{ color: '#8c45d3', fontWeight: 900 }}>PLAYZA</span>. Together we'll take <span
                       className="inline-block px-2 py-0.5 rounded font-black"
                       style={{
-                        background: 'linear-gradient(135deg, #f5bf02 0%, #ffd700 100%)',
-                        color: '#000',
+                        background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)',
+                        color: '#fff',
                         border: '2px solid #000',
                         boxShadow: '2px 2px 0px #000',
                         letterSpacing: '0.05em',
                         fontSize: '0.95em'
                       }}
-                    >BNB</span> meme culture to the moon.
+                    >SOLANA</span> meme culture to the moon.
                   </p>
                   <p className="font-inter text-lg md:text-xl leading-relaxed font-bold" style={{ color: '#000', letterSpacing: '0.02em' }}>
-                    Follow us, join our Telegram, and become a true <span style={{ color: '#f5bf02', fontWeight: 900 }}>PLAYZER</span> today!
+                    Follow us, join our Telegram, and become a true <span style={{ color: '#8c45d3', fontWeight: 900 }}>PLAYZER</span> today!
                   </p>
                 </div>
               </div>
@@ -595,8 +596,8 @@ export default function Home() {
           {/* Social Media Section */}
           <div id="links" className="text-center">
             <div className="mb-12">
-              <div className="inline-block px-6 py-2 bg-[#f5bf02] rounded-full mb-6">
-                <span className="text-black font-bold text-sm tracking-wider uppercase">Connect</span>
+              <div className="inline-block px-6 py-2 rounded-full mb-6" style={{ background: 'linear-gradient(135deg, #8c45d3 0%, #30e1ad 100%)' }}>
+                <span className="text-white font-bold text-sm tracking-wider uppercase">Connect</span>
               </div>
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-black text-black font-inter">
                 Connect with PLAYZA
@@ -610,7 +611,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="group w-full sm:w-auto max-w-sm"
               >
-                <div className="bg-white rounded-3xl p-10 border-2 border-gray-200 shadow-xl hover:border-[#f5bf02] hover:shadow-2xl transition-all duration-300 group-hover:scale-105">
+                <div className="bg-white rounded-3xl p-10 border-2 border-gray-200 shadow-xl hover:border-[#8c45d3] hover:shadow-2xl transition-all duration-300 group-hover:scale-105">
                   <div className="flex flex-col items-center gap-6">
                     <div className="w-20 h-20 rounded-2xl bg-gray-100 flex items-center justify-center">
                       <Image
@@ -634,9 +635,9 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="group w-full sm:w-auto max-w-sm"
               >
-                <div className="bg-white rounded-3xl p-10 border-2 border-gray-200 shadow-xl hover:border-[#f5bf02] hover:shadow-2xl transition-all duration-300 group-hover:scale-105">
+                <div className="bg-white rounded-3xl p-10 border-2 border-gray-200 shadow-xl hover:border-[#30e1ad] hover:shadow-2xl transition-all duration-300 group-hover:scale-105">
                   <div className="flex flex-col items-center gap-6">
-                    <div className="w-20 h-20 rounded-2xl bg-[#0088cc] flex items-center justify-center">
+                    <div className="w-20 h-20 rounded-2xl bg-[#30e1ad] flex items-center justify-center">
                       <Image
                         src="/social/telegram-svgrepo-com.svg"
                         alt="Telegram"

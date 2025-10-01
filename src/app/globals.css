@@ -5,10 +5,13 @@ html {
 }
 
 :root {
-  --background: #ffffff;
+  --background: #f4f4f4;
   --foreground: #000000;
-  --primary: #f5bf02;
-  --accent: #ffd700;
+  --primary: #8c45d3;
+  --accent: #30e1ad;
+  --purple: #8c45d3;
+  --teal: #30e1ad;
+  --light-gray: #f4f4f4;
 }
 
 @theme inline {
